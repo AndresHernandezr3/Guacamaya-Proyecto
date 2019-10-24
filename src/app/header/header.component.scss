@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: fit-content;
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    a{
+        padding: 15px;
+        font-size: 30px;
+        color: black;
+    }
+    font-family: "Montserrat", sans-serif;;
+}
+.logo{
+    height: 100px;
+}

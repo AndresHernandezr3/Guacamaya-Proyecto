@@ -1,0 +1,66 @@
+<div class="container1">
+        <section class="thumbnail">
+            <img src="../../assets/images/plashita.png" alt="">
+        </section>
+        <div class="columnas">
+            <section class="filtro">
+            <h1>Encuentra tu Destino</h1>
+            <hr>
+            <h3>Sortear Por estados</h3>
+            <input type="checkbox">Miranda
+            <br>
+            <input type="checkbox">Bolivar
+            <br>
+            <input type="checkbox">Amazonas
+            <br>
+            <input type="checkbox">Tachira
+            <br>
+            <input type="checkbox">Merida
+            <br>
+            <input type="checkbox">Trujillo
+            <br>
+            <input type="checkbox">Zulia
+            <hr>
+            <h3>Sortear Por Localizacion</h3>
+            <input type="checkbox">Playa
+            <br>
+            <input type="checkbox">Pico
+            <br>
+            <input type="checkbox">Nieve
+            <br>
+            <input type="checkbox">Selva
+            <hr>
+            <h3>Sortear Por Rating</h3>
+            <input type="checkbox">Mas Popular
+            <br>
+            <input type="checkbox">Menos Popular
+            </section>
+            <section class="destinos">
+                    <div *ngFor="let d of destinos">
+                            <div class="card" style="width: 18rem;">
+                                    <img src="{{d.photos}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">{{d.name}}</h5>
+                                      <h5>{{d.state}}</h5>
+                                      <p class="card-text">{{d.description}}</p>
+                                      <h1 >{{d.popularity}}&#11088;	
+                                        </h1>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" (click)="openModal(template)">Explorar!</button>
+                            </div>
+                            <ng-template #template>
+                                    <div class="modal-header">
+                                      <h4 class="modal-title pull-left">Informacion</h4>
+                                      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="../../assets/images/destinymore.png" alt="">
+                                    </div>
+                            </ng-template>                           
+                    </div>
+
+            </section>
+        </div>
+    </div>

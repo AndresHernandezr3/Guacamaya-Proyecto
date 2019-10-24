@@ -1,0 +1,50 @@
+
+.destinos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+}
+.card{
+
+    border: solid grey 1px;
+    padding: 15px;
+    height: fit-content;
+    margin: 20px;
+    
+
+
+    img{
+        width: 100%;
+    }
+    .card-text{
+        display: block;
+        width: 100%;
+    }
+}
+.columnas{
+    width: 100%;
+    display: flex;
+    flex: 25%;
+    
+}
+.filtro{
+    background-color: #C4C4C4;
+    margin-right: 10px;
+}
+.container1{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin:0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+.thumbnail{
+    margin-bottom: 100px;
+}
+.modal-body{
+    img{
+        width: 100%;
+    }
+}

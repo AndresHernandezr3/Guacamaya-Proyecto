@@ -1,0 +1,46 @@
+
+.destinos{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+.card{
+
+    border: solid grey 1px;
+    padding: 15px;
+    height: fit-content;
+    margin: 20px;
+    
+
+
+    img{
+        width: 100%;
+    }
+    .card-text{
+        display: block;
+        width: 100%;
+    }
+}
+.columnas{
+    display: flex;
+    flex: 25%;
+    
+}
+.filtro{
+    background-color: #C4C4C4;
+    margin-right: 10px;
+}
+.container1{
+    width: 100%;
+    height: fit-content;
+    font-family: "Montserrat", sans-serif;
+}
+.thumbnail{
+    margin-bottom: 100px;
+}
+.modal-body{
+    img{
+        width: 100%;
+    }
+}

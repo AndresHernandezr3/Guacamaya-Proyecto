@@ -11,6 +11,7 @@ import { RatingModule } from 'ngx-bootstrap/rating';
 import { FormsModule } from '@angular/forms';
 import { HotelesComponent } from './hoteles/hoteles.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FooterComponent,
     AboutUsComponent,
     DestinosComponent,
-    HotelesComponent
+    HotelesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
